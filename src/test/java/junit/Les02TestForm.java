@@ -44,7 +44,7 @@ public class Les02TestForm {
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
         $("table").shouldHave(text("Steve Rogers"), text("captainamerica@marvel.com"), text("Male"), text("8885115480"), text("04 July,1918"), text("Arts"),
                 text("Sports"), text("capitanamerica.jpg"), text("Earth-616, New York City"), text("NCR Noida"));
-        $("#closeLargeModal").shouldHave(text("Close"));
+        $("#closeLargeModal").shouldHave(text("Close")).click();
 
 
     }
