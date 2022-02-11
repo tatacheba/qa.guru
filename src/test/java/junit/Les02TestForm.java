@@ -25,8 +25,8 @@ public class Les02TestForm {
         $("#firstName").setValue("Steve");
         $("#lastName").setValue("Rogers");
         $("#userEmail").setValue("captainamerica@marvel.com");
-        $(byText("Male")).click();
-        $("#userNumber").setValue("8885115480");
+        $(byText("Male")).click();//
+        $("#userNumber").setValue("8885115489");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__year-select").selectOptionByValue("1918");
         $(".react-datepicker__month-select").selectOptionByValue("6");
@@ -45,8 +45,6 @@ public class Les02TestForm {
         $("table").shouldHave(text("Steve Rogers"), text("captainamerica@marvel.com"), text("Male"), text("8885115480"), text("04 July,1918"), text("Arts"),
                 text("Sports"), text("capitanamerica.jpg"), text("Earth-616, New York City"), text("NCR Noida"));
         $("#closeLargeModal").shouldHave(text("Close")).click();
-
-
     }
 }
 
