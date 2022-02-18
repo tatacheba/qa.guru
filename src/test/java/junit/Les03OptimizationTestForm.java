@@ -53,7 +53,6 @@ public class Les03OptimizationTestForm {
         registrationPage.checkModalTable(headerModalTable);
         registrationPage.checkForm("Student Name", firstName + " " + lastName)
                 .checkForm("Student Email", userEmail)
-                .checkForm("Student Email", userEmail)
                 .checkForm("Gender", gender)
                 .checkForm("Student Email", userEmail)
                 .checkForm("Mobile", userNumber)

@@ -19,7 +19,7 @@ public class Les02TestForm {
     }
 
     @Test
-    void fillTextForm() throws InterruptedException {
+    void fillTextForm() {
         open("/automation-practice-form");
 
         $(".practice-form-wrapper > h5").shouldHave(text("Student Registration Form"));

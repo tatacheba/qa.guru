@@ -29,7 +29,6 @@ public class RegistrationPages {
             uploadPicture = $("#uploadPicture"),
             currentAddress = $("#currentAddress"),
             stateInput = $("#state"),
-            stateName = $(byText("NCR")),
             cityInput = $("#city"),
             cityName = $("#react-select-4-input"),
             buttonSubmit = $("#submit"),
