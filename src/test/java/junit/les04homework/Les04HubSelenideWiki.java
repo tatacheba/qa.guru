@@ -1,12 +1,14 @@
 package junit.les04homework;
 
-import org.junit.jupiter.api.*;
-import pages.RegistrationPages;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Configuration.*;
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Configuration.baseUrl;
+import static com.codeborne.selenide.Configuration.browserSize;
+import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class Les04HubSelenideWiki {
 
@@ -21,12 +23,8 @@ public class Les04HubSelenideWiki {
         open("selenide/selenide");
         $(byText("Wiki")).click();
         $(".Box-row button").click();
-        $(byText("Pages")).find(byText("SoftAssertions"));
-        $(byText("SoftAssertions")).click();
-        $(".markdown-body")
-                .shouldHave(text("JUnit5"))
-                .findElement(byText("@ExtendWith"));
-
+        $(".wiki-pages-box").find(byText("SoftAssertions")).click();
+        $(".markdown-body").shouldHave(text("JUnit5"), text("@ExtendWith"));
     }
 
 }

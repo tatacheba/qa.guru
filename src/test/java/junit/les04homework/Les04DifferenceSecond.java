@@ -3,14 +3,13 @@ package junit.les04homework;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.*;
-
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 public class Les04DifferenceSecond {
-
     @Test
     void testDifferenceSecond() {
         open("https://yandex.ru/");
-       $("input#text").click();
+        $("input#text").click();
         $("input#text").setValue("ikea");
         $(".search2__button").$("button").click();
         $("div").$(".reviews").shouldHave(text("Отзывы"));//failed
