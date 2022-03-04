@@ -26,7 +26,6 @@ public class Les06TestViaAllureLambda {
                 }
         );
         step("Search " + REPOSITORY, () -> {
-            $(".header-search-input").click();
             $(".header-search-input").sendKeys(REPOSITORY);
             $(".header-search-input").submit();
         });
@@ -38,7 +37,7 @@ public class Les06TestViaAllureLambda {
             $(By.partialLinkText("Issues")).click();
         });
         step("Check number #" + ISSUE_NUMBER, () -> {
-            $(withText("#" + ISSUE_NUMBER)).should(Condition.exist);
+            $(withText("#" + ISSUE_NUMBER)).shouldBe(Condition.visible);
         });
 
     }
