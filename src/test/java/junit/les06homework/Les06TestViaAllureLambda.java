@@ -1,7 +1,7 @@
-package junit.les06homework;//test commit unit 8
+package junit.les06homework;//test commit unit 8.1
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.logevents.SelenideLogger;
+import com.codeborne.selenide.Condition;//test commit unit 8.2
+import com.codeborne.selenide.logevents.SelenideLogger;//test commit unit 8.3
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
