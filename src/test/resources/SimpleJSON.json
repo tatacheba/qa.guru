@@ -1,0 +1,15 @@
+{
+  "proFile": {
+    "name": "Tatiana",
+    "surname": "Cheb"
+  },
+  "points": [
+    "Black",
+    "White",
+    "Yellow"
+  ],
+  "lines": {
+    "depth": 34,
+    "curvature": "hard"
+  }
+}
