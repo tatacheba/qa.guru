@@ -1,7 +1,6 @@
 package pages.components;
 
 public class UserProfile {
-
     public String name;
     public String surname;
 

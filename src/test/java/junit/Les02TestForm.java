@@ -1,6 +1,7 @@
 package junit;
 
 import org.junit.jupiter.api.*;
+import junit.les10homework.AttachAllure;
 
 import java.io.File;
 

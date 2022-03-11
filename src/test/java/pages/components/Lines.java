@@ -1,7 +1,6 @@
 package pages.components;
 
 public class Lines {
-
     public String curvature;
     public Integer depth;
 
@@ -20,6 +19,4 @@ public class Lines {
     public void setDepth(Integer depth) {
         this.depth = depth;
     }
-
-
 }

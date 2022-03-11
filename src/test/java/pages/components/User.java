@@ -20,7 +20,6 @@ public class User {
         this.profile = profile;
     }
 
-
     public User(@JsonProperty("proFile") UserProfile profile, @JsonProperty("points") List<String> points, @JsonProperty("line") Lines lines) {
         this.profile = profile;
         this.points = points;
