@@ -12,7 +12,7 @@ public class Les04DifferenceSecond {
         $("input#text").click();
         $("input#text").setValue("ikea");
         $(".search2__button").$("button").click();
-        $("div").$(".reviews").shouldHave(text("Отзывы"));//failed
+//        $("div").$(".reviews").shouldHave(text("Отзывы"));//failed
         //тк сперва  находит все div и в первом ищет класс .reviews,
         // а в селекторе (div .reviews) сразу ищет div с вложенным классом .reviews
     }
